@@ -1,3 +1,17 @@
+# ISOHEL - sunlight geoactivity measurement web application.
+
+I want to build a React based web application which, using Mapbox and OpenWeatherMap API, is able to plot points between major cities across the world which share the same duration of sunshine.
+
+The site will be updated daily at 24:00NZT, with the previous days isohels plotted on a map of the world which the user can interact with and observe.
+
+Isohel calculation will be dependent on sunlight times relative to sunset and sunrise; i.e the difference in sunset and sunrise to calculate total sun duration for the given day.
+
+Each API call to OpenWeatherMap will return points that will be converted to plottable coordinates that MapBox is able to recognise and configure suitably to fit their own system.
+
+The inspiration for this project comes from the musician "EDEN" and his song "isohel". 
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
