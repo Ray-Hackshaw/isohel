@@ -1,17 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import mapboxgl from 'mapbox-gl';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+mapboxgl.accessToken = 'pk.eyJ1IjoicmhhY2tzaGF3IiwiYSI6ImNrZmd1MWlkbzBzNXgyem5weHF5dmg4aDYifQ.6e2Is20NCFjCSsfuLyA88w';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+class Application extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        lng: 5,
+        lat: 34,
+        zoom: 2
+        };
+    }
+    componentDidMount() {
+        // var bounds = [
+        //     [90, -90], // Southwest coordinates
+        //     [-90, 90] // Northeast coordinates
+        //     ];
+        const map = new mapboxgl.Map({
+        container: this.mapContainer,
+        style: 'mapbox://styles/rhackshaw/ckgrnxsxh0etw19qrkfsde5n7',
+        center: [161.846, 18.854],
+        zoom: 0.66,
+        // maxZoom: 1,
+        attributionControl: false,
+        // maxBounds: bounds
+        });
+    }
+    render() {
+        return (
+        <div>
+        <div ref={el => this.mapContainer = el} className='mapContainer' />
+        </div>
+        )
+    }
+}
+     
+ReactDOM.render(<Application />, document.getElementById('app'));
