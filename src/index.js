@@ -20,7 +20,7 @@ class Application extends React.Component {
         //     ];
         const map = new mapboxgl.Map({
         container: this.mapContainer,
-        style: 'mapbox://styles/rhackshaw/ckgrnxsxh0etw19qrkfsde5n7',
+        style: 'mapbox://styles/rhackshaw/ckgrpt6jv0gn319s2eltf926y',
         center: [161.846, 18.854],
         zoom: 0.66,
         // maxZoom: 1,
