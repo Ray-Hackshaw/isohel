@@ -13,6 +13,7 @@ class Application extends React.Component {
         zoom: 2
         };
     }
+    
     componentDidMount() {
         // var bounds = [
         //     [90, -90], // Southwest coordinates
@@ -25,8 +26,10 @@ class Application extends React.Component {
         zoom: 0.66,
         // maxZoom: 1,
         attributionControl: false,
+        
         // maxBounds: bounds
         });
+        map.dragRotate.disable();
     }
     render() {
         return (
