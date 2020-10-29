@@ -1,11 +1,19 @@
+/* html { Idea for blur on load + blur fade after scrolling in? accompanied with transition zoom
+    height: 100%;
+    width: auto;
+    filter: blur(20px);
+} */
+
+
+
 .mapContainer {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    }
+}
 
-    .mapboxgl-ctrl-logo {
-        display: none !important;
-    }
+.mapboxgl-ctrl-logo {
+    display: none !important;
+}
