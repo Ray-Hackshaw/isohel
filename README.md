@@ -8,6 +8,8 @@ Isohel calculation will be dependent on sunlight times relative to sunset and su
 
 Each API call to OpenWeatherMap will return points that will be converted to plottable coordinates that MapBox is able to recognise and configure suitably to fit their own system.
 
+Currently, I am planning on using Node/Express in order to dynamically update the site with new API each day. The call will store information which can then be drawn upon for the main project. Each day the call will be made again and all the file will be wrote to with new information which will subsequently update the webapplication itself.
+
 The inspiration for this project comes from the musician "EDEN" and his song "isohel". 
 
 
