@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import mapboxgl from 'mapbox-gl';
+import $ from 'jquery';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoicmhhY2tzaGF3IiwiYSI6ImNrZmd1MWlkbzBzNXgyem5weHF5dmg4aDYifQ.6e2Is20NCFjCSsfuLyA88w';
 
@@ -30,37 +31,42 @@ class Application extends React.Component {
         // maxBounds: bounds
         });
         // Basic line drawing plotting between points - first tests
+        console.log("sdsds")
         map.on('load', function () {
-            map.addSource('route', {
-                'type': 'geojson',
-                'data': {
-                    'type': 'Feature',
-                    'properties': {},
-                    'geometry': {
-                        'type': 'LineString',
-                        'coordinates': [
-                            [174.78333, -36.85],
-                            [139.77, 35.68]
-                        ]
-                    }
-                }
-            });
-            map.addLayer({
-                'id': 'route',
-                'type': 'line',
-                'source': 'route',
-                'layout': {
-                    'line-join': 'round',
-                    'line-cap': 'round'
-                },
-                'paint': {
-                    'line-color': '#ffffff',
-                    'line-width': 4
-                }
+            $.getJSON('./src/points.json', function(data) {
+                $.each(data.points, function(index, element) {
+                    console.log(element.xValue)
+                    console.log(element.yValue)
+                    map.addSource('route', {
+                        'type': 'geojson',
+                        'data': {
+                            'type': 'Feature',
+                            'properties': {},
+                            'geometry': {
+                                'type': 'LineString',
+                                'coordinates': [
+                                    [element.xValue, element.yValue],
+                                    [element.xValue, element.yValue]
+                                ]
+                            }
+                        }
+                    });
+                    map.addLayer({
+                        'id': 'route',
+                        'type': 'line',
+                        'source': 'route',
+                        'layout': {
+                            'line-join': 'round',
+                            'line-cap': 'round'
+                        },
+                        'paint': {
+                            'line-color': '#ffffff',
+                            'line-width': 4000
+                        }
+                    });
+                });
             });
         });
-
-
 
         map.dragRotate.disable();
     }
