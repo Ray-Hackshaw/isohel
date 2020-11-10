@@ -29,6 +29,39 @@ class Application extends React.Component {
         
         // maxBounds: bounds
         });
+        // Basic line drawing plotting between points - first tests
+        map.on('load', function () {
+            map.addSource('route', {
+                'type': 'geojson',
+                'data': {
+                    'type': 'Feature',
+                    'properties': {},
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [
+                            [174.78333, -36.85],
+                            [139.77, 35.68]
+                        ]
+                    }
+                }
+            });
+            map.addLayer({
+                'id': 'route',
+                'type': 'line',
+                'source': 'route',
+                'layout': {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+                'paint': {
+                    'line-color': '#ffffff',
+                    'line-width': 4
+                }
+            });
+        });
+
+
+
         map.dragRotate.disable();
     }
     render() {
