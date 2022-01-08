@@ -1,24 +1,213 @@
 {
-    "coordinates": [
-        {
-            "xValue": "174.78333",
-            "yValue": "-36.85",
-            "sunlight": ""
+    "points": [
+        {   
+            "city": "Auckland",
+            "location":
+                {
+                    "x": "174.743042",
+                    "y": "-36.85582"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
         },
-        {
-            "xValue": "139.77",
-            "yValue": "35.68",
-            "sunlight": ""
+        {   
+            "city": "Tokyo",
+            "location":
+                {
+                    "x": "139.691711",
+                    "y": "35.689499"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
         },
-        {
-            "xValue": " -122.3301",
-            "yValue": "47.6038",
-            "sunlight": ""
+        {   
+            "city": "Wellington",
+            "location":
+                {
+                    "x": "174.766663",
+                    "y": "-41.283329"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
         },
-        {
-            "xValue": "-80.1937",
-            "yValue": "25.7743",
-            "sunlight": ""
+        {   
+            "city": "Osaka",
+            "location":
+                {
+                    "x": "135.502182",
+                    "y": "34.693741"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Sydney",
+            "location":
+                {
+                    "x": "151.207321",
+                    "y": "-33.867851"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Melbourne",
+            "location":
+                {
+                    "x": "144.963318",
+                    "y": "-37.813999"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Canberra",
+            "location":
+                {
+                    "x": "149.128067",
+                    "y": "-35.283459"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "London",
+            "location":
+                {
+                    "x": "-0.12574",
+                    "y": "51.50853"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "New York",
+            "location":
+                {
+                    "x": "-75.499901",
+                    "y": "43.000351"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Chicago",
+            "location":
+                {
+                    "x": "-87.650047",
+                    "y": "41.850029"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Los Angeles",
+            "location":
+                {
+                    "x": "-118.243683",
+                    "y": "34.052231"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Beijing",
+            "location":
+                {
+                    "x": "116.397232",
+                    "y": "39.907501"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Vancouver",
+            "location":
+                {
+                    "x": "-122.661491",
+                    "y": "45.638729"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Ottawa",
+            "location":
+                {
+                    "x": "-75.69812",
+                    "y": "45.411171"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Paris",
+            "location":
+                {
+                    "x": "2.35236",
+                    "y": "48.856461"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Berlin",
+            "location":
+                {
+                    "x": "13.38375294188495",
+                    "y": "52.515256272443736"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Athens",
+            "location":
+                {
+                    "x": "23.716221",
+                    "y": "37.97945"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Mexico City",
+            "location":
+                {
+                    "x": "-99.127663",
+                    "y": "19.428471"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
+        },
+        {   
+            "city": "Amsterdam",
+            "location":
+                {
+                    "x": "4.88969",
+                    "y": "52.374031"
+                },
+            "rise": "",
+            "set": "",
+            "light": ""
         }
     ]
 }
